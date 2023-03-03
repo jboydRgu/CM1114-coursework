@@ -3,18 +3,9 @@ header {
     background-color:rgb(67, 214, 219);
     border-top-left-radius:10px ;
     border-top-right-radius:10px ;
-    padding: 10px ;
-    
-    border: 10px solid rgb(201, 231, 240);
-    
-}
-
-#logo {
-    width: 50px;
-    height: 50px;
-    float: left;
-    
-    margin-right: 10px;
+    padding:5px ;
+    border: 5px ;
+    margin: 5px ;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -37,24 +28,6 @@ p {
 main { 
     background-color:rgb(67, 214, 219);
     border-radius: 10px;
-    padding: 10px;
-}
-
-.leftPart{
-    float: left;
-    width: 40%;
-    background-color:rgb(67, 214, 219);
-    border-radius: 10px;
-    padding: 10px;
-    
-}
-
-.rightPart{
-    float: left;
-    width: 40 %;
-    background-color:rgb(67, 214, 219);
-    border-radius: 10px;
-    padding: 10px;
 }
 
 aside { 
@@ -65,22 +38,13 @@ aside {
 footer {
     background-color: rgb(52, 92, 94);
     border-radius: 10px;
-color:white;
-}
-
-nav ul{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+color:white; 
 }
 
 nav li{
     border: 2px solid white;
     background-color: rgb(52, 92, 94);
     list-style-type: none;
-    float: left;
-    width: 15%;
-    padding: 16px;
 }
 nav li a {
     color: white;
@@ -99,6 +63,8 @@ nav li:hover{
 table{ 
     font-family:georgia;
     border-collapse: collapse;
+    border: 5px;
+    
 }
 table td, table th{
     border: 2px solid #f0f0f0;
@@ -106,10 +72,12 @@ table td, table th{
 
 table tr:nth-chile(even){
     background-color: #f2f2f2;
+    
 }
 
 table tr:hover {
     background-color: rgb(20, 60, 238);
+    
 }
 
 table th{
