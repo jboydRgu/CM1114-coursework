@@ -1,8 +1,26 @@
 <html>
 <head>
     <title>Movie Society</title>
-    
+    <!--Links to styles pages-->
     <link rel="stylesheet" href="css/main.css">
+
+    <script>
+        function submit_event() {
+            var title = document.forms["event"]["event_title"].value;
+            var date = document.forms["event"]["event_date"].value;
+            if (title == "") { 
+                alert("An event must have a title!");
+            }
+            else {
+                if (date.length == 0){
+                    alert("An event must have a date!");
+                }
+                else {
+                    alert("Event submitted! The society will contact you soon.");
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -10,7 +28,7 @@
         <img src="images/potentialLogo.png" id="logo" alt="The remians of an image"/>
      </div> 
     <header><h1>Movie Society</h1></header>
-
+<!--nav bar-->
     <nav> 
         <ul>
             <li > <a href="index.html">Home Page </a></li>
@@ -24,11 +42,13 @@
 
     <main> 
         <div>
+            <!--The calendar with meeting times, location and topic-->
             <!--Finalise location and times-->
         <table>
-            <tr>
+            <tr style="text-align: center;">
                 <td></td><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>
             </tr>
+            <div style="padding-top: 3px; padding-bottom: 3px;">
             <tr>
                 <th>W1</th><td>Welcome Back night.<br>8-11pm. location?</td><td></td><td></td><td></td><td></td><td></td><td></td>
             </tr>
@@ -65,11 +85,29 @@
             <tr>
                 <th>W12</th><td></td><td></td><td></td><td>Pub crawl/Fight Club recreation</td><td></td><td></td>
             </tr>
+        </div>
         </table>
     </div>
+
+    <p>Want to recommend an event? well please feel free to bellow.</p>
+    <form name="event">
+        <fieldset>
+            <legend>Recommendation for event?</legend>
+            
+            <label for="event">Event: </label>
+            <input type="text" name="event_title" value=""/>
+            <br>
+            <label for="event">Date: </label>
+            <input type="date" name="event_date" value=""/>
+            <br>
+
+            <button type="button" onclick='submit_event()'>Submit</button>
+
+        </fieldset>
+    </form>
     </main>
 
-    <footer> <p>Copyright Jonathan Boyd</p></footer>
+    <footer> <p>Copyright Jonathan Boyd, 2023</p></footer>
 
 </body>
 </html>

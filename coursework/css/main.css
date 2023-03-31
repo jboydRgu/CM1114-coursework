@@ -1,3 +1,4 @@
+/*the main code styles*/
 body {background-color: rgb(135, 146, 143);}
 header {
     background-color:rgb(67, 214, 219);
@@ -8,7 +9,7 @@ header {
     border: 10px solid rgb(201, 231, 240);
     
 }
-
+/*for the logo*/
 #logo {
     width: 50px;
     height: 50px;
@@ -16,7 +17,7 @@ header {
     
     margin-right: 10px;
 }
-
+/*font styles*/
 h1, h2, h3, h4, h5, h6, p {
     font-family:georgia;
 }
@@ -33,13 +34,13 @@ p {
     font-size: 12px;
 
 }
-
+/*main body parts*/
 main { 
     background-color:rgb(67, 214, 219);
     border-radius: 10px;
     padding: 10px;
 }
-
+/*contact_us page left side of screen styles*/
 .leftPart{
     float: left;
     width: 40%;
@@ -48,10 +49,10 @@ main {
     padding: 10px;
     
 }
-
+/*contact_us page right side of screen styles*/
 .rightPart{
     float: left;
-    width: 40 %;
+    width: 40%;
     background-color:rgb(67, 214, 219);
     border-radius: 10px;
     padding: 10px;
@@ -67,7 +68,7 @@ footer {
     border-radius: 10px;
 color:white;
 }
-
+/*nav bar customisation*/
 nav ul{
     margin: 0;
     padding: 0;
@@ -95,7 +96,7 @@ nav li:hover{
 .active {
     background-color: rgb(11, 236, 143);
 }
-
+/*the event_calendar page's table style*/
 table{ 
     font-family:georgia;
     border-collapse: collapse;
@@ -114,4 +115,16 @@ table tr:hover {
 
 table th{
     background-color: rgb(52, 92, 94);
+}
+/*image_gallery page's styles*/
+.gallery-img {
+    width: 100%;
+}
+
+#img-gallery {
+padding-top:10px;
+}
+
+#img-gallery .row{
+    margin-bottom:10px;
 }

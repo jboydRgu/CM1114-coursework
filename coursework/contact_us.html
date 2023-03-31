@@ -1,6 +1,7 @@
 <html>
 <head>
     <title>Movie Society</title>
+    <!--Links to styles pages-->
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -9,7 +10,7 @@
         <img src="images/potentialLogo.png" id="logo" alt="The remians of an image"/>
      </div> 
     <header><h1>Movie Society</h1></header>
-
+<!--nav bar-->
     <nav>  <ul>
         <li > <a href="index.html">Home Page </a></li>
         <li> <a href="img_gallery.html">Gallery</a></li>
@@ -18,7 +19,7 @@
         <li class="active"> <a href="contact_us.html">Contact Us</a></li>
 
     </ul></nav>
-
+<!--form for the user to join the society-->
     <main> 
         <div class="leftPart">
             <form>
@@ -42,9 +43,17 @@
                     <br>
                     <label for="file">File: </label>
                     <input type="file" name="file" value=""/>
+                    <br><br>
+                    <button type="button" onclick='send_form("form_outcome")'>Submit</button>
+
                 </fieldset>
             </form>
+
+            <div>
+                <p id="form_outcome"> </p>
+            </div>
         </div>
+        <!--eye candy on the other side for the easily distracted-->
         <div class="rightPart">
             <img src="images/potentialLogo.png" id="logo" alt="The remians of an image"/>
 
@@ -52,7 +61,13 @@
         
     </main>
 
-    <footer> <p>Copyright Jonathan Boyd</p></footer>
+    <footer> <p>Copyright Jonathan Boyd, 2023</p></footer>
+
+    <script>
+        function send_form(id) {
+        document.getElementById(id).innerHTML="Form has been sent successfully!"
+        }
+    </script>
 
 </body>
 </html>
