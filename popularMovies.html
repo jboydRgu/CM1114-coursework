@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Movie Society</title>
+    <!--Links to styles pages-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- to change the movie poster when the user hovers over them-->
+    <style>
+        .good1 {
+            width: 200px;
+            height: 260px;
+            background: url("images/topgun1.jpg") no-repeat;
+            display: inline-block;
+        }
+        .good1:hover {
+            width: 200px;
+            height: 260px;
+            background: url("images/topgun2.jpg") no-repeat;
+        }
+
+        .good2 {
+            width: 200px;
+            height: 260px;
+            background: url("images/johnwick1.jpg") no-repeat;
+            display: inline-block;
+        }
+        .good2:hover {
+            width: 200px;
+            height: 260px;
+            background: url("images/johnwick2.jpg") no-repeat;
+        }
+
+        .good3 {
+            width: 194px;
+            height: 259px;
+            background: url("images/download.jpg") no-repeat;
+            display: inline-block;
+        }
+        .good3:hover {
+            background: url("images/download2.jpg") no-repeat;
+        }
+
+
+        .bad1 {
+            width: 194px;
+            height: 259px;
+            background: url("images/rop1.jpg") no-repeat;
+            display: inline-block;
+        }
+        .bad1:hover {
+            background: url("images/rop2.jpg") no-repeat;
+        }
+
+        .bad2 {
+            width: 194px;
+            height: 259px;
+            background: url("images/kenobi1.jpg") no-repeat;
+            display: inline-block;
+        }
+        .bad2:hover {
+            background: url("images/kenobi2.jpg") no-repeat;
+        }
+
+        .bad3 {
+            width: 194px;
+            height: 259px;
+            background: url("images/ant1.jpg") no-repeat;
+            display: inline-block;
+        }
+        .bad3:hover {
+            background: url("images/ant2.jpg") no-repeat;
+        }
+    </style>
+
+   </head>
+
+
+<body style=" margin-top:10px">
+
+    <!-- same old header/logo-->
+    <div style="padding-left: 10px;">
+       <img src="images/potentialLogo.png" id="logo" alt="The remians of an image"/>
+    </div>   
+       <header><h1>Something</h1></header>
+
+   <!--nav bar-->
+       <nav>
+           <ul>
+               <li> <a href="index.html">Home Page </a></li>
+               <li> <a href="img_gallery.html">Gallery</a></li>
+               <li> <a href="current_members.html">Current Members</a></li>
+               <li> <a href="events_calendar.html">Events</a></li>
+               <li> <a href="contact_us.html">Contact Us</a></li>
+               <li class="active"> <a href="popularMovies.html">Our Popular Movies</a></li>
+               <li> <a href="societyBenefits.html">Opportunities</a></li>
+   
+           </ul>
+       </nav>
+
+<main style="height: 1280px;">
+<!-- explaining the page-->
+    <h2>These lists are voted for by our users.</h2>
+    <p style="font-size: 16px;">The lists only cover recent releases, slim pickings we know.</p>
+    <br>
+    <br>
+
+    <div class="pop">
+    <h2>Most Popular</h2>
+    <h3>This list was voted by our users as the most popular movies/shows!</h3>
+
+    <br>
+
+    <!-- title, movie picture and blurb-->
+    <h1><b>1: Top Gun Maverick</b></h1>
+    <div class="pmBox">
+        <div class="good1"></div>
+        <p style="display:inline"> A modern day classic, whatever feelings you have towards 
+        <br>Tom Cruise, you have got to admit he does make good movies.<br>
+        The movie follows the story of an older Maverick, returning for  <br>
+        one final action packed mission. No overuse of CGI, with a tight  <br>
+        and compact story. The movie has good pacing, dialogue, acting and <br>
+        some phenomonal dog fights what more could you want!</p>
+    </div>
+
+<br><br>
+
+    <h1><b>2: John Wick Chapter 4</b></h1>
+    <div class="pmBox">
+        <div class="good2"></div>
+        <p style="display:inline"> A very recent release and a great one at that. 
+        <br> The final chapter to the John Wick story. An example of how to do 
+        <br> action at the highest standard. The Story is simple and follows  
+        <br> John fighting his way out off the control of the high table. 
+        <br> The movie may have a long run time, but never leaves you feeling 
+        <br> bored or that its dragging. The movie features some of the most 
+        <br>impeccable fight scenes and will not leave our minds with out a fight.</p>
+    </div>
+
+<br><br>
+
+    <h1><b>3: Better Call Saul Season 6</b></h1>
+    <div class="pmBox">
+        <div class="good3"></div>
+        <p style="display:inline"> Where to start with this one...<br>
+        Truly a masterpiece from Vince Gilligan and Peter Gould.<br>
+        The perfect example of its the journey that matters and <br>
+        not the destination. With most fans going in knowing the<br>
+        ending off our beloved favourite characters, the fact<br>
+        that the show is still able to keep us on the edge of our <br>
+        seats, is a monumentous achievment. The show brings the end of<br>
+        the critically acclaimed breaking bad-verse. In a <br>
+        beautifully shot and expertly written story proves there<br>
+        is still some hope for the feature of television.</p>
+        </div>
+
+    </div>
+
+    <!-- same thing just on rigt side of the page-->
+    <div class="unpop">
+    <h2>The stinkers</h2>
+    <h3>This unfortunate to be featured on list is the worst reviewed movies/shows.</h3>
+
+    <br>
+
+    <h1><b>1: The rings of power season 1</b></h1>
+    <div class="pmBox">
+        <div class="bad1"></div>
+        <p style="display:inline"> Ouch!<br>
+        A necessary evil for television, proving that the fans should<br>
+        be listened to and the source material respected. With bland CGI
+        <br>terrible, plot and dialogue, its a wonder that grown adults <br>
+        worked on this disrespectful telling of Tolkien's work.
+        <br><br>The acting may be the worst offender in this show with<br>
+        its bland forgetable cast. As of writting this, some bizarre <br>
+        stories are starting to come out about how this abomination<br>
+        was made. With horses setting on fire, trauma from<br>
+        the main lead and firing the tolkien estate supervisor. <br>
+        This billion dollar baby from Amazon really should have been  <br>
+        aborted before gracing the world with its presence.</p>
+    </div>
+
+    <br><br>
+
+    <h1><b>2: Obi Wan Kenobi season 1</b></h1>
+    <div class="pmBox">
+        <div class="bad2"></div>
+        <p style="display:inline"> The best way to describe this product is that somehow Disney is<br>
+        not actually producing a season 2 straight away for this show. <br>
+        Rarely does a product come out that shows just how corrupt a <br>
+        studio can be, whether its baiting the fans, attacking the<br>
+        viewer for criticism, or some rather unsubstantiated tweets that<br>
+        proved millions to be racists and finally getting the "main lead"<br>
+        to divulge their diappointment with the paying customer in his<br>
+        car. This show slandered some of the most well known and beloved<br>
+        characters of star wars and destroyed what remained of their fan <br>
+        base. Its other crimes include a cringe chase scene, not walking<br>
+        around a gate and lightsabers no longer killing. Brain damage is<br>
+        suggested if one wishes to enjoy this product but be assured <br>
+        that it will be provided upon completting the measly 6 episodes.
+        </p>
+    </div>
+
+    <br><br>
+
+    <h1><b>3: Ant-man and the wasp: Quantumania</b></h1>
+    <div class="pmBox">
+        <div class="bad3"></div>
+        <p style="display:inline"> Lets begin with the name. Bloated and forgetable.<br>
+        Short and sweet was not the goal of the meeting to name this.<br>
+        Why both antman and the wasp need to be mentioned is puzzling <br>
+        as they arent even the sole focus for our protaonists,<br>
+        Quantumania alone isn't perfect but would be an improvement.<br>
+        The title isnt the only thing bloated as the movie goes on for far<br>
+        to long, the Movie struggles to have an intelligent plot so therefore<br>
+        relies on one of the main characters to not reveal important<br>
+        information to the rest of the cast so that the events may happen,<br>
+        whether its random and incorrect references to communism <br>
+        this CGI blowout really did bomb but not just in quality also<br>
+        in the box office, currently not even having made $500 million,<br>
+        this movie died after its third week and has now quietly passed<br>
+        away to which few shall mourn.
+        </p>
+    </div>
+
+</div>
+
+
+</main>
+
+    <footer> <p>Copyright Jonathan Boyd, 2023</p></footer>
+
+</body>
+</html>
