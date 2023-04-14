@@ -1,0 +1,201 @@
+/*the main code styles*/
+body {background-color: rgb(135, 146, 143);}
+header {
+    background-color:rgb(255, 255, 255);
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+    padding: 10px ;
+    
+    border: 10px solid rgb(201, 231, 240);
+    
+}
+/*for the logo*/
+#logo {
+    width: 50px;
+    height: 50px;
+    float: left;
+    
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/*font styles*/
+h1, h2, h3, h4, h5, h6, p {
+    font-family:georgia;
+}
+
+h1 { 
+    font-size: 25px;
+}
+
+h3 { 
+    font-size: 15px;
+}
+
+p {
+    font-size: 12px;
+
+}
+
+/*main body parts*/
+main { 
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*contact_us page left side of screen styles*/
+.leftPart{
+    float: left;
+    width: 40%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+/*contact_us page right side of screen styles*/
+.rightPart{
+    float: left;
+    width: 40%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*home page left side*/
+.leftHPage{
+    float: left;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*Home page right side*/
+aside {
+    float: left;
+    width: 40%;
+    background-color: rgb(201, 238, 240);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+/*keeping the footer at the bottom of the page*/
+footer {
+    background-color: rgb(52, 92, 94);
+    border-radius: 10px;
+    color:white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/*Countering bootstraps annoying changes*/
+nav, header, main{ 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.mar{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*nav bar customisation*/
+nav ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li{
+    border: 2px solid white;
+    background-color: rgb(0, 0, 255);
+    list-style-type: none;
+    float: left;
+    width: 14%;
+    padding: 16px;
+}
+nav li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: large;
+}
+
+nav li:hover{
+    background-color:rgb(255, 0, 0);
+}
+
+.active {
+    background-color: rgb(10, 146, 16);
+}
+
+/*the event_calendar page's table style*/
+table{ 
+    font-family:georgia;
+    border-collapse: collapse;
+}
+table td, table th{
+    border: 2px solid #f0f0f0;
+}
+
+table tr:nth-child(even){
+    background-color: #93c1e7;
+}
+
+table tr:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+table th{
+    background-color: rgb(49, 230, 240);
+}
+
+/*image_gallery page's styles*/
+.gallery-img {
+    width: 100%;
+}
+
+#img-gallery {
+padding-top:10px;
+}
+
+#img-gallery .row{
+    margin-bottom:10px;
+}
+
+/*popular movie page's left and right side column styles*/
+.pop{
+    float: left;
+    width: 45%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 20px;
+    margin-right: 40px;
+}
+
+.unpop{
+    float: left;
+    width: 45%;
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 20px;
+    margin-left: 40px;
+    
+}
+
+.pmBox{
+    display: flex;
+  align-items: center;
+  justify-content: center
+}
