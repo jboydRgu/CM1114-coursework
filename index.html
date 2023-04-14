@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie Society</title>
+        <!--Links to styles pages-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--fake login/out option's script-->
+        <script>
+            var counter = 2;
+            function login(){
+            if(counter % 2 == 0){
+            alert('You have been logged in!');
+            }
+            else {
+            alert('You have been logged out!');
+            }
+            counter += 1;
+            }
+        </script>
+
+
+        <!--
+        Threat Model
+
+        Threat Source: External
+        Threat Agent: Human
+        Threat Intention: Intentional
+        Threat Motivation: Capture user data
+        Threat Impact: Users will be wary of their information's security and less likely
+        for new members to sign up.
+        Threat Mitigation: ensure users dont travel to the website from dodgy 3rd party links.
+        Make the login page only accessable through https.
+    -->
+    </head>
+
+
+    
+<body>
+
+    <!-- logo image-->
+    <div style=" margin-left:10px">
+        <img src="images/potentialLogo.png" id="logo" alt="The remians of an image">
+    </div>
+
+    <!-- page title-->
+<header style="margin:10px"><h1>Movie Society</h1>
+
+    <!--the login/out boxes-->
+    <form style="display: inline;">
+        <fieldset>
+            <label for="email"></label>
+                    <input type="text" name="email" value="Email"/>
+                    
+            <label for="password"></label>
+                    <input type="text" name="password" value="Password"/>
+                    
+                    <button type="button" onclick='login("login")' style=" margin-left:5px">Login</button>
+        </fieldset>
+    </form>
+</header>
+
+
+    <!--nav bar-->
+    <nav style=" margin:10px">
+        <ul>
+            <li class="active"> <a href="index.html">Home Page </a></li>
+            <li> <a href="img_gallery.html">Gallery</a></li>
+            <li> <a href="current_members.html">Current Members</a></li>
+            <li> <a href="events_calendar.html">Events</a></li>
+            <li> <a href="contact_us.html">Contact Us</a></li>
+            <li> <a href="popularMovies.html">Our Popular Movies</a></li>
+            <li> <a href="societyBenefits.html">Opportunities</a></li>
+        </ul>
+    </nav>
+
+<!-- the page's main content-->
+<main style=" margin:10px; height:1080px"> 
+    <div>
+        <h3>Welcome to the Movie Society</h3>
+        <p>Hello, welcome all newcomers. This Society, 
+        as the name suggests is for fans of movies/film and other Tv media.</p>
+
+
+        <!--image carousel that will cycle through 3 set images-->
+            <div id="home-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#home-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+            <div class="carousel-inner" style="height:450px; width:95%; padding-left: 5%;">
+        <!-- Item 1 -->
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/coupleTv.jpg" alt="The remians of an image">
+                </div>
+        <!-- Item 2 -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/blu-ray-disc.jpg" alt="The remians of an image">
+                </div>
+        <!-- Item 3 -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/stream.jpg" alt="The remians of an image">
+                </div>
+            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#home-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#home-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+   </div>
+   
+
+    <br>
+    <!--media links-->
+    <div class="leftHPage">
+        <h3 style="font-size: 22px;">Entertaining movie/tv critics</h3>
+        <br>
+        
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/xiz3THVwMkk" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <iframe width="300" height="200"
+        src="https://www.youtube.com/embed/D0-DLIFhktg" title="YouTube video player"
+        frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+        web-share" allowfullscreen></iframe>
+
+        <br>
+
+        <iframe width="300" height="200" src="https://www.youtube.com/embed/x2t7fvoRTJQ" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe> <iframe width="300" height="200" src="https://www.youtube.com/embed/tlYDCuJ-c8s" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+        gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <!-- text box explaining page to the viewers-->
+    <aside>
+        <h2>News about upcoming events!</h2>
+        
+        <h3>Welcome back Week!</h3>
+        <P>Hello, A warm welcome to all old and returning members
+            and new members. This, as part of the first week back to uni
+            life, we will be having a more relaxed and comfortable first 
+            meeting. We plan to introduce or refresh our members on how
+            we opperate and what will be instore for the weeks to come.
+            As well as a general get to know each other and our interests
+            in cinema and television.<br>
+            Drinks/Snacks will be provided!</P>
+        <h3>Looking forward to meeting our newcomers and returning members.</h3>
+    </aside>
+    <br><br><br><br><br><br><br><br><br><br><br>
+</main>
+<!-- page footer-->
+<footer> 
+    <p>Copyright Jonathan Boyd, 2023</p>
+</footer>
+
+</body>
+</html>
